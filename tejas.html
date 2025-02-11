@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Cards Grid</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        /* Navbar */
+        nav {
+            background-color: #333;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            color: #f4a261;
+        }
+
+        /* Homepage Section */
+        .home-section {
+            text-align: center;
+            padding: 50px;
+            background-color: #ffffff;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .home-section h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .home-section p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .home-section button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #f4a261;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+        }
+
+        .home-section button:hover {
+            background-color: #e76f51;
+        }
+
+        /* Movie Grid */
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .movie-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .movie-card:hover {
+            transform: scale(1.05);
+        }
+
+        .movie-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .movie-card h2 {
+            font-size: 1.5em;
+            margin: 15px 0 10px;
+        }
+
+        .movie-card p {
+            font-size: 0.9em;
+            color: #555;
+            padding: 0 15px 15px;
+        }
+
+        .movie-card .year {
+            font-size: 0.8em;
+            color: #888;
+            margin-bottom: 10px;
+        }
+
+        /* About Section */
+        #about {
+            background-color: #fff;
+            padding: 50px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        #about h2 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        #about p {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#movies">Movies</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <h1>Welcome to Movie Central</h1>
+        <p>Discover your favorite movies, explore new genres, and find the latest releases all in one place.</p>
+        <button onclick="window.location.href='#movies'">Explore Movies</button>
+    </section>
+
+    <!-- Movies Grid -->
+    <div id="movies" class="movie-grid">
+        <!-- Movie Card 1 -->
+        <div class="movie-card">
+            <img src="C:\Users\user\Downloads\the-greatest-of-all-time-goat-review-megathread-v0-1p5beigifqmd1.webp">
+            <h2>GOAT</h2>
+            <p class="year">Release Year: 2024</p>
+            <p>Gandhi is a hostage negotiator, field agent, and spy working for the Special Anti-Terrorist Squad (SATS). After years of service, he is called back for a critical mission that sets him on a dangerous collision course with his own past.</p>
+        </div>
+
+        <!-- Movie Card 2 -->
+        <div class="movie-card">
+            <img src="C:\Users\user\Downloads\MV5BM2M0YmIxNzItOWI4My00MmQzLWE0NGYtZTM3NjllNjIwZjc5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">
+            <h2>KGF CHAPTER 1</h2>
+            <p class="year">Release Year: 2018</p>
+            <p>In the 1970s, a gangster named Rocky goes undercover as a slave to assassinate the owner of a notorious gold mine known as the Kolar Gold Fields.</p>
+        </div>
+
+        <!-- Movie Card 3 -->
+        <div class="movie-card">
+            <img src="C:\Users\user\Downloads\my-fault-2023-3983.jpg">
+            <h2>MY FAULT</h2>
+            <p class="year">Release Year: 2023</p>
+            <p>Noah has to leave her town, boyfriend and friends behind and move into the mansion of her mother's new rich husband. There she meets Nick, her new stepbrother. They fall madly in love in secret.</p>
+        </div>
+
+        <!-- Movie Card 4 -->
+        <div class="movie-card">
+            <img src="C:\Users\user\Downloads\the-last-naruto-the-movie-md-web.jpg">
+            <h2>NARUTO: THE LAST MOVIE</h2>
+            <p class="year">Release Year: 2014</p>
+            <p>The Last: Naruto the Movie is a 2014 animated action-adventure film about Naruto Uzumaki's mission to rescue his younger sister, Hanabi Hyuga, from Toneri Otsutsuki.</p>
+        </div>
+
+        
+
+        <!-- Movie Card 5 -->
+        <div class="movie-card">
+            <img src="C:\Users\user\Downloads\81CEBoHpocL.jpg">
+            <h2> FAST AND FURIOUS 2</h2>
+            <p class="year">Release Year: 2003</p>
+            <p>2 Fast 2 Furious is a 2003 action film directed by John Singleton from a screenplay by Michael Brandt and Derek Haas, based on a story by Brandt, Haas, and Gary Scott Thompson. It is the sequel to The Fast and the Furious (2001) </p>
+        </div>   
+        
+        <!-- Movie Card 6 -->
+        <div class="movie-card">
+            <img src="C:\Users\user\Downloads\raajakumara-upcoming-kannada-action-movie-written-directed-by-santhosh-ananddram-produced-by.jpg">
+            <h2> RAJAKUKARA </h2>
+            <p class="year">Release Year:2017 </p>
+            <p>A dutiful son, a prince in his fathers' eyes, retains his purity of character despite the many challenges thrown his way.</p>
+        </div>   
+
+        <!-- Movie Card 7 -->
+        <div class="movie-card">
+            <img src="C:\Users\user\Downloads\6bwprpe3w35c1.jpg">
+            <h2> TOXIC</h2>
+            <p class="year">Release Year:2025 </p>
+            <p>Set in a bygone era, this gripping tale unfolds in the coastal paradise of Goa, where a powerful drug cartel pulls the strings behind a facade of sun-soaked beaches and vibrant culture.</p>
+        </div>   
+      
+        <!-- Movie Card 8 -->
+        <div class="movie-card">
+            <img src="C:\Users\user\Downloads\MV5BZTRhODExY2MtNDAwNC00YmE0LTk5MmItNGUwZDU1MDUyYzNjXkEyXkFqcGc@._V1_.jpg">
+            <h2> MAX </h2>
+            <p class="year">Release Year: 2024 </p>
+            <p>Inspector Arjun Mahakshay, law and order inspector reports to duty at a new police station after a 2 months suspension and faces an unexpected situation.</p>
+        </div>   
+
+        <!-- Movie Card 9 -->
+        <div class="movie-card">
+            <img src="C:\Users\user\Downloads\MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg">
+            <h2> AVENGERS:ENDGAME</h2>
+            <p class="year">Release Year:2019 </p>
+            <p>After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.</p>
+        </div> 
+
+        <!-- Movie Card 10 -->
+        <div class="movie-card">
+            <img src="C:\Users\user\Downloads\MV5BMTQ5NzQ5MDk3NF5BMl5BanBnXkFtZTgwMzIyMDU4MzE@._V1_.jpg">
+            <h2> GOOGLY</h2>
+            <p class="year">Release Year:2013 </p>
+            <p>Sharath and Swath, who fall in love but get separated due to some misunderstandings. They reunite a few years later at a friend's wedding</p>
+        </div>   
+      
+    </div>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Movie Central</h2>
+        <p>Welcome to Movie Central, your ultimate destination for movie lovers! Whether you're into action, drama, comedy, or documentaries, our platform brings you a curated list of the best films from all genres and eras. Dive into a world of cinematic masterpieces, hidden gems, and the latest releases. Stay up-to-date with new movies and discover your next favorite film!</p>
+        <p>Our goal is to make it easy for you to browse movies, read about their plots, and find the perfect movie for any occasion. Whether you're looking for something light-hearted or epic, we've got you covered!</p>
+    </section>
+
+</body>
+</html>
